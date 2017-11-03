@@ -15,9 +15,11 @@ docker build -t phpwebbuilder \
     .
 ```
 
+```
 docker build -t phpwebbuilder \
     --build-arg PHP_VERSION=7.1 \
     --build-arg COMPOSER_VERSION=1.5.1 \
     --build-arg NODE_VERSION=6.2.2 \
     --build-arg YARN_VERSION=1.2.1 \
     .
+```
