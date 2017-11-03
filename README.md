@@ -1,10 +1,11 @@
 
+# Description
 
-# Git repository
-
-https://github.com/anasdox/docker-phpwebbuilder
+This image contains most commons dependency managers used to build php applications
 
 # Build a custom image
+
+To build a custom image with diffrents versions of composer or nodejs or ... you can use docker build args 
 
 ```
 docker build -t phpwebbuilder \
