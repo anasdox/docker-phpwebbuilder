@@ -34,9 +34,8 @@ docker run --rm \
     --user $(id -u):$(id -g) \
     --volume $PWD:/app \
     --workdir /app \
-    anasdoxphpwebbuilder \
+    anasdox/phpwebbuilder \
     composer install --prefer-dist --no-interaction --ignore-platform-reqs
-
 ```
 
 ## NPM
@@ -45,6 +44,6 @@ docker run --rm \
     --user $(id -u):$(id -g) \
     --volume $PWD:/app \
     --workdir /app \
-    phpwebbuilder \
+    anasdox/phpwebbuilder \
     npm install
 ```
