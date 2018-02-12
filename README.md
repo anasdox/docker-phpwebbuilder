@@ -13,6 +13,8 @@ docker build -t phpwebbuilder \
     --build-arg COMPOSER_VERSION=1.5.2 \
     --build-arg NODE_VERSION=8.9.0 \
     --build-arg YARN_VERSION=1.3.2 \
+    --build-arg PHPCS_VERSION=^3.2 \
+    --build-arg PHPUNIT_VERSION=^7.0 \
     .
 ```
 
@@ -22,6 +24,8 @@ docker build -t phpwebbuilder \
     --build-arg COMPOSER_VERSION=1.5.1 \
     --build-arg NODE_VERSION=6.2.2 \
     --build-arg YARN_VERSION=1.2.1 \
+    --build-arg PHPCS_VERSION=^3.2 \
+    --build-arg PHPUNIT_VERSION=^7.0 \
     .
 ```
 
