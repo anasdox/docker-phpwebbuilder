@@ -23,7 +23,8 @@ RUN echo "deb http://deb.debian.org/debian jessie-backports main contrib non-fre
     build-essential \
     libssl-dev \
     gnupg \
-    unzip
+    unzip \
+    libpng-dev
 
 ########################
 # Install composer
@@ -37,6 +38,7 @@ ENV PATH "$PATH:/tmp/vendor/bin"
 RUN echo "memory_limit=-1" > "$PHP_INI_DIR/conf.d/memory-limit.ini" && echo "date.timezone=${PHP_TIMEZONE:-UTC}" > "$PHP_INI_DIR/conf.d/date_timezone.ini"
 
 RUN docker-php-ext-install zip
+RUN docker-php-ext-install gd
 
 RUN set -ex \
   && curl -s -f -L -o /tmp/installer.php https://raw.githubusercontent.com/composer/getcomposer.org/da290238de6d63faace0343efbdd5aa9354332c5/web/installer \
