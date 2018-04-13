@@ -91,6 +91,7 @@ ARG PHPCS_VERSION=^3.2
 RUN composer global require phpunit/phpunit ${PHPUNIT_VERSION} && composer global require squizlabs/php_codesniffer ${PHPCS_VERSION}
 
 RUN apt-get install -y -qq ruby ruby-dev make \
-    && gem install --no-rdoc --no-ri compass
+    && gem install --no-rdoc --no-ri sass -v 3.4.22 \
+    && gem install --no-rdoc --no-ri compass 
 
 ENTRYPOINT ["/usr/bin/env"]
