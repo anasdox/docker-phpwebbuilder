@@ -24,6 +24,7 @@ RUN echo "deb http://deb.debian.org/debian jessie-backports main contrib non-fre
     libssl-dev \
     gnupg \
     unzip \
+    zip \
     libpng-dev
 
 ########################
